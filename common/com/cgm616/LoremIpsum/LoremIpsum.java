@@ -1,6 +1,6 @@
 package com.cgm616.LoremIpsum;
 
-
+import com.cgm616.LoremIpsum.block.ModBlocks;
 import com.cgm616.LoremIpsum.core.LocalizationHandler;
 import com.cgm616.LoremIpsum.core.common.CommonProxy;
 import com.cgm616.LoremIpsum.lib.Reference;
@@ -35,6 +35,8 @@ public class LoremIpsum {
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		
+		ModBlocks.blocksInit();
 		LocalizationHandler.loadLanguages();
 	}
 	
