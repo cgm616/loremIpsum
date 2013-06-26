@@ -1,7 +1,5 @@
 package com.cgm616.LoremIpsum.lib;
 
-import net.minecraft.block.Block;
-
 public class Reference {
 	
 	public static final String MOD_ID = "LoremIpsum";

@@ -3,6 +3,7 @@ package com.cgm616.LoremIpsum.block;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 
 public class ModBlocks {
 	
@@ -10,7 +11,7 @@ public class ModBlocks {
 	
 	public static void blocksInit()
 	{
-		oreCorundum = new OreCorundum(800, Material.rock);
+		oreCorundum = new BlockLore(800, Material.rock).setCreativeTab(CreativeTabs.tabBlock).setHardness(10.0F).setUnlocalizedName("CorundumOre").setLightValue(1.0F).setStepSound(Block.soundStoneFootstep).setResistance(37F);
 		GameRegistry.registerBlock(oreCorundum, "oreCorundum");
 	}
 
