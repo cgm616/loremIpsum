@@ -35,7 +35,6 @@ public class LoremIpsum {
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		
 		ModBlocks.blocksInit();
 		LocalizationHandler.loadLanguages();
 	}

@@ -12,7 +12,11 @@ public class ModBlocks {
 	public static void blocksInit()
 	{
 		oreCorundum = new BlockLore(800, Material.rock).setCreativeTab(CreativeTabs.tabBlock).setHardness(10.0F).setUnlocalizedName("CorundumOre").setLightValue(1.0F).setStepSound(Block.soundStoneFootstep).setResistance(37F);
-		GameRegistry.registerBlock(oreCorundum, "oreCorundum");
+		gameRegisters();
+	}
+	public static void gameRegisters()
+	{
+		GameRegistry.registerBlock(oreCorundum,"CorundumOre");
 	}
 
 }
