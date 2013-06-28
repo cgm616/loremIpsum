@@ -4,7 +4,7 @@ public class ClientProxy extends com.cgm616.LoremIpsum.core.common.CommonProxy {
         
         @Override
         public void registerRenderers() {
-        	// MinecraftForgeClient.preloadTexture("/LoremIpsum/textures/blocks/furnaceCrucible_terrain.png");
+        	
         }
         
         
