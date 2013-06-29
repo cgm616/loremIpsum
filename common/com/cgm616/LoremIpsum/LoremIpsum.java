@@ -1,6 +1,9 @@
 package com.cgm616.LoremIpsum;
 
+import java.io.File;
+
 import com.cgm616.LoremIpsum.block.ModBlocks;
+import com.cgm616.LoremIpsum.core.ConfigurationHandler;
 import com.cgm616.LoremIpsum.core.LocalizationHandler;
 import com.cgm616.LoremIpsum.core.common.CommonProxy;
 import com.cgm616.LoremIpsum.lib.Reference;
@@ -21,6 +24,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 		version = Reference.VERSION
 )
 @NetworkMod(
+		channels = {Reference.CHANNEL_NAME},
 		serverSideRequired = false,
 		clientSideRequired = true
 )
@@ -35,6 +39,7 @@ public class LoremIpsum {
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
 		ModBlocks.blocksInit();
 		LocalizationHandler.loadLanguages();
 	}
