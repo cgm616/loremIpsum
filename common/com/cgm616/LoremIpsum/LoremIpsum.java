@@ -2,10 +2,14 @@ package com.cgm616.LoremIpsum;
 
 import java.io.File;
 
+import net.minecraft.creativetab.CreativeTabs;
+
 import com.cgm616.LoremIpsum.block.ModBlocks;
 import com.cgm616.LoremIpsum.core.ConfigurationHandler;
 import com.cgm616.LoremIpsum.core.LocalizationHandler;
 import com.cgm616.LoremIpsum.core.common.CommonProxy;
+import com.cgm616.LoremIpsum.creativetab.TabLoremIpsum;
+import com.cgm616.LoremIpsum.item.ModItems;
 import com.cgm616.LoremIpsum.lib.Reference;
 
 import cpw.mods.fml.common.Mod;
@@ -36,11 +40,14 @@ public class LoremIpsum {
     @Instance
     public static LoremIpsum instance = new LoremIpsum();
     
+    public static CreativeTabs loremIpsumTab = new TabLoremIpsum(CreativeTabs.getNextID(), "Basic" + Reference.MOD_ID);
+    
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
-		ModBlocks.blocksInit();
+		ModBlocks.blockInit();
+		ModItems.itemInit();
 		LocalizationHandler.loadLanguages();
 	}
 	

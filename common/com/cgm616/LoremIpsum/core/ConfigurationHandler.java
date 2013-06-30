@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.logging.Level;
 
 import com.cgm616.LoremIpsum.lib.BlockId;
+import com.cgm616.LoremIpsum.lib.ItemId;
 import com.cgm616.LoremIpsum.lib.Reference;
 import com.cgm616.LoremIpsum.lib.Strings;
 
@@ -22,7 +23,8 @@ public class ConfigurationHandler {
 		try
 		{
 			config.load();
-			BlockId.oreCorundumId = config.get("Block", Strings.oreCorundumName, BlockId.oreCorundumIdDefault).getInt();
+			BlockId.oreCorundumId = config.get("Block Id", Strings.oreCorundumName, BlockId.oreCorundumIdDefault).getInt();
+			ItemId.ingotCorundumId = config.get("Item Id", Strings.ingotCorundumName, ItemId.ingotCorundumIdDefault).getInt();
 			
 			FMLLog.log(Level.INFO, Reference.MOD_ID + ": " + "Config file loaded sucessfully.");
 		}
