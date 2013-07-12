@@ -24,6 +24,7 @@ public class ConfigurationHandler {
 		{
 			config.load();
 			BlockId.oreCorundumId = config.get("Block Id", Strings.oreCorundumName, BlockId.oreCorundumIdDefault).getInt();
+			BlockId.blockCorundumId = config.get("Block Id", Strings.blockCorundumName, BlockId.blockCorundumIdDefault).getInt();
 			ItemId.ingotCorundumId = config.get("Item Id", Strings.ingotCorundumName, ItemId.ingotCorundumIdDefault).getInt();
 			
 			FMLLog.log(Level.INFO, Reference.MOD_ID + ": " + "Config file loaded sucessfully.");

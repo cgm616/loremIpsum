@@ -8,6 +8,7 @@ import com.cgm616.LoremIpsum.block.ModBlocks;
 import com.cgm616.LoremIpsum.core.ConfigurationHandler;
 import com.cgm616.LoremIpsum.core.LocalizationHandler;
 import com.cgm616.LoremIpsum.core.common.CommonProxy;
+import com.cgm616.LoremIpsum.craft.CraftingHandler;
 import com.cgm616.LoremIpsum.creativetab.TabLoremIpsum;
 import com.cgm616.LoremIpsum.item.ModItems;
 import com.cgm616.LoremIpsum.lib.Reference;
@@ -49,6 +50,7 @@ public class LoremIpsum {
 		ModBlocks.blockInit();
 		ModItems.itemInit();
 		LocalizationHandler.loadLanguages();
+		CraftingHandler.craftInit();
 	}
 	
 	@cpw.mods.fml.common.Mod.Init
