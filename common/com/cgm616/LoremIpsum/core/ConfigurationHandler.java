@@ -23,9 +23,14 @@ public class ConfigurationHandler {
 		try
 		{
 			config.load();
+
 			BlockId.oreCorundumId = config.get("Block Id", Strings.oreCorundumName, BlockId.oreCorundumIdDefault).getInt();
 			BlockId.blockCorundumId = config.get("Block Id", Strings.blockCorundumName, BlockId.blockCorundumIdDefault).getInt();
+			BlockId.oreSilverId = config.get("Block Id", Strings.oreSilverName, BlockId.oreSilverIdDefault).getInt();
+			BlockId.blockSilverId = config.get("Block Id", Strings.blockSilverName, BlockId.blockSilverIdDefault).getInt();
+			
 			ItemId.ingotCorundumId = config.get("Item Id", Strings.ingotCorundumName, ItemId.ingotCorundumIdDefault).getInt();
+			ItemId.ingotSilverId = config.get("Item Id", Strings.ingotSilverName, ItemId.ingotSilverIdDefault).getInt();
 			
 			FMLLog.log(Level.INFO, Reference.MOD_ID + ": " + "Config file loaded sucessfully.");
 		}

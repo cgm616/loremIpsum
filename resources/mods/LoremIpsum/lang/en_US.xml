@@ -4,6 +4,9 @@
 	<comment>English (en_US) Localization File</comment>
 	<entry key="tile.CorundumOre.name">Corundum Ore</entry>
 	<entry key="tile.CorundumBlock.name">Corundum Block</entry>
+	<entry key="tile.SilverOre.name">Silver Ore</entry>
+	<entry key="tile.SilverBlock.name">Silver Block</entry>
 	<entry key="itemGroup.BasicLoremIpsum">Lorem Ipsum</entry>
 	<entry key="item.CorundumIngot.name">Corundum Ingot</entry>
+	<entry key="item.SilverIngot.name">Silver Ingot</entry>
 </properties>

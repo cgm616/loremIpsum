@@ -1,10 +1,5 @@
 package com.cgm616.LoremIpsum.core.helper;
 
-import java.util.logging.Level;
-
-import com.cgm616.LoremIpsum.lib.Reference;
-
-import cpw.mods.fml.common.FMLLog;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
@@ -32,7 +27,6 @@ public class DictionaryHelper {
 			key = names[0];
 			name = "ore" + key;
 		}
-		FMLLog.log(Level.INFO, Reference.MOD_ID + ": " + "The name of the block " + block.getUnlocalizedName() + " in the OreDictionary is " + name);
 		return name;
 	}
 	public static String getName(Item item)
@@ -45,7 +39,6 @@ public class DictionaryHelper {
 			key = names[0];
 			name = "ingot" + key;
 		}
-		FMLLog.log(Level.INFO, Reference.MOD_ID + ": " + "The name of the item " + item.getUnlocalizedName() + " in the OreDictionary is " + name);
 		return name;
 	}
 }

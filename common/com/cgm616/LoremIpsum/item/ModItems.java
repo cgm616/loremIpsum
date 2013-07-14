@@ -11,14 +11,17 @@ import net.minecraft.item.Item;
 public class ModItems {
 	
 	public static Item ingotCorundum;
+	public static Item ingotSilver;
 	
 	public static void itemInit()
 	{
 		ingotCorundum = new ItemLore(ItemId.ingotCorundumId).setCreativeTab(LoremIpsum.loremIpsumTab).setUnlocalizedName(Strings.ingotCorundumName);
+		ingotSilver = new ItemLore(ItemId.ingotSilverId).setCreativeTab(LoremIpsum.loremIpsumTab).setUnlocalizedName(Strings.ingotSilverName);
 	}
 	public static void gameRegisters()
 	{
-		GameRegistry.registerItem(ingotCorundum,"CorundumIngot");
+		GameRegistry.registerItem(ingotCorundum, Strings.ingotCorundumName);
+		GameRegistry.registerItem(ingotSilver, Strings.ingotSilverName);
 	}
 
 }
