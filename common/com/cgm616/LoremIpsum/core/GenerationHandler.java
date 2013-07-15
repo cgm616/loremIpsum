@@ -31,12 +31,22 @@ public class GenerationHandler implements IWorldGenerator{
 
 	private void generateSurface(World world, Random random, int blockX, int blockZ)
 	{
-		for(int i = 0; i < 1F; i++)
+		// Corundum
+		for(int i = 0; i < 1; i++)
 		{
 			int xCoord = blockX + random.nextInt(16);
 			int yCoord = random.nextInt(16);
 			int zCoord = blockZ + random.nextInt(16);
 			(new WorldGenMinable(ModBlocks.oreCorundum.blockID, 2)).generate(world,random,xCoord,yCoord,zCoord);
+		}
+		
+		// Silver
+		for(int j = 0; j < 6; j++)
+		{
+			int xCoord = blockX + random.nextInt(16);
+			int yCoord = random.nextInt(44);
+			int zCoord = blockZ + random.nextInt(16);
+			(new WorldGenMinable(ModBlocks.oreSilver.blockID, 6)).generate(world,random,xCoord,yCoord,zCoord);
 		}
 	}
 	

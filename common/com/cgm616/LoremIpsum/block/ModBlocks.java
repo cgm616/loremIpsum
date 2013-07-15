@@ -21,7 +21,7 @@ public class ModBlocks {
 		oreCorundum = new BlockLore(BlockId.oreCorundumId, Material.rock, BlockId.oreCorundumId, 1).setCreativeTab(LoremIpsum.loremIpsumTab).setHardness(10.0F).setUnlocalizedName(Strings.oreCorundumName).setLightValue(1.0F).setStepSound(Block.soundStoneFootstep).setResistance(37F);
 		blockCorundum = new BlockLore(BlockId.blockCorundumId, Material.iron, ItemId.ingotCorundumId, 9).setCreativeTab(LoremIpsum.loremIpsumTab).setHardness(30.0F).setUnlocalizedName(Strings.blockCorundumName).setLightValue(1.0F).setStepSound(Block.soundMetalFootstep).setResistance(100F);
 		oreSilver = new BlockLore(BlockId.oreSilverId, Material.rock, BlockId.oreSilverId, 1).setCreativeTab(LoremIpsum.loremIpsumTab).setHardness(5.0F).setUnlocalizedName(Strings.oreSilverName).setLightValue(0.0F).setStepSound(Block.soundStoneFootstep).setResistance(3F);
-		blockSilver = new BlockLore(BlockId.blockSilverId, Material.iron, ItemId.ingotSilverId, 9).setCreativeTab(LoremIpsum.loremIpsumTab).setHardness(15.0F).setUnlocalizedName(Strings.blockSilverName).setLightValue(0.0F).setStepSound(Block.soundMetalFootstep).setResistance(5F);
+		blockSilver = new BlockLore(BlockId.blockSilverId, Material.iron, BlockId.blockSilverId, 1).setCreativeTab(LoremIpsum.loremIpsumTab).setHardness(15.0F).setUnlocalizedName(Strings.blockSilverName).setLightValue(0.0F).setStepSound(Block.soundMetalFootstep).setResistance(5F);
 		
 		gameRegisters();
 	}

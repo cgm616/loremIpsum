@@ -1,0 +1,23 @@
+{
+  "modinfoversion": 0.0.2,
+  "modlist": [{
+    "modid": “LoremIpsum”,
+    "name": “Lorem Ipsum”,
+    "description": “Lorem Ipsum was created to fill in gaps about minecraft, as well as to be a chemistry/alchemie mod that co-excistes with other mods of this type well.”,
+    "version": “0.0.2“,
+    "mcversion": “1.5.2”,
+    "url": "http://www.github.com/cgm616/loremIpsum/",
+    "updateUrl": "",
+    "authors": [ “cgm616” ],
+    "credits": “Thank you to everybody that helped.  The list can be found at https://github.com/cgm616/loremIpsum/wiki/Credits”,
+    "logoFile": "",
+    "screenshots": [],
+    "requiredMods": [
+    ],
+    "dependencies": [
+        "Forge",
+    ],
+    "dependants": [],
+    "useDependencyInformation": "true"
+  }]
+}
