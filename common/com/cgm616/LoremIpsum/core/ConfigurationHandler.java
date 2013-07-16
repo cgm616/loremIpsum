@@ -31,6 +31,12 @@ public class ConfigurationHandler {
 			
 			ItemId.ingotCorundumId = config.get("Item Id", Strings.ingotCorundumName, ItemId.ingotCorundumIdDefault).getInt();
 			ItemId.ingotSilverId = config.get("Item Id", Strings.ingotSilverName, ItemId.ingotSilverIdDefault).getInt();
+	
+			ItemId.pickaxeCorundumId = config.get("Tool Id", Strings.pickaxeCorundumName, ItemId.pickaxeCorundumIdDefault).getInt();
+			ItemId.axeCorundumId = config.get("Tool Id", Strings.axeCorundumName, ItemId.axeCorundumIdDefault).getInt();
+			ItemId.swordCorundumId = config.get("Tool Id", Strings.swordCorundumName, ItemId.swordCorundumIdDefault).getInt();
+			ItemId.hoeCorundumId = config.get("Tool Id", Strings.hoeCorundumName, ItemId.hoeCorundumIdDefault).getInt();
+			ItemId.shovelCorundumId = config.get("Tool Id", Strings.shovelCorundumName, ItemId.shovelCorundumIdDefault).getInt();
 			
 			FMLLog.log(Level.INFO, Reference.MOD_ID + ": " + "Config file loaded sucessfully.");
 		}

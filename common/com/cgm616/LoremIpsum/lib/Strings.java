@@ -9,5 +9,10 @@ public class Strings {
 	
 	public static final String ingotCorundumName = "CorundumIngot";
 	public static final String ingotSilverName = "SilverIngot";
+	public static final String pickaxeCorundumName = "CorundumPickaxe";
+	public static final String axeCorundumName = "CorundumAxe";
+	public static final String swordCorundumName = "CorundumSword";
+	public static final String hoeCorundumName = "CorundumHoe";
+	public static final String shovelCorundumName = "CorundumShovel";
 
 }

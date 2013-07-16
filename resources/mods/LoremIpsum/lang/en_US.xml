@@ -9,4 +9,9 @@
 	<entry key="itemGroup.BasicLoremIpsum">Lorem Ipsum</entry>
 	<entry key="item.CorundumIngot.name">Corundum Ingot</entry>
 	<entry key="item.SilverIngot.name">Silver Ingot</entry>
+	<entry key="item.CorundumPickaxe.name">Corundum Pickaxe</entry>
+	<entry key="item.CorundumAxe.name">Corundum Axe</entry>
+	<entry key="item.CorundumSword.name">Corundum Sword</entry>
+	<entry key="item.CorundumHoe.name">Corundum Hoe</entry>
+	<entry key="item.CorundumShovel.name">Corundum Shovel</entry>
 </properties>

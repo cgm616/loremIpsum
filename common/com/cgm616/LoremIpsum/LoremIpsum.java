@@ -13,6 +13,7 @@ import com.cgm616.LoremIpsum.craft.CraftingHandler;
 import com.cgm616.LoremIpsum.craft.DictionaryHandler;
 import com.cgm616.LoremIpsum.creativetab.TabLoremIpsum;
 import com.cgm616.LoremIpsum.item.ModItems;
+import com.cgm616.LoremIpsum.item.tool.ModTools;
 import com.cgm616.LoremIpsum.lib.Reference;
 
 import cpw.mods.fml.common.Mod;
@@ -51,6 +52,7 @@ public class LoremIpsum {
 		ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
 		ModBlocks.blockInit();
 		ModItems.itemInit();
+		ModTools.toolInit();
 		LocalizationHandler.loadLanguages();
 		DictionaryHandler.addOres();
 		CraftingHandler.craftInit();
