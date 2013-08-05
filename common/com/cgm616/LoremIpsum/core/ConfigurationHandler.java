@@ -31,7 +31,8 @@ public class ConfigurationHandler {
 			
 			ItemId.ingotCorundumId = config.get("Item Id", Strings.ingotCorundumName, ItemId.ingotCorundumIdDefault).getInt();
 			ItemId.ingotSilverId = config.get("Item Id", Strings.ingotSilverName, ItemId.ingotSilverIdDefault).getInt();
-	
+			ItemId.pureRodId = config.get("Item Id", Strings.pureRodName, ItemId.pureRodIdDefault).getInt();
+			
 			ItemId.pickaxeCorundumId = config.get("Tool Id", Strings.pickaxeCorundumName, ItemId.pickaxeCorundumIdDefault).getInt();
 			ItemId.axeCorundumId = config.get("Tool Id", Strings.axeCorundumName, ItemId.axeCorundumIdDefault).getInt();
 			ItemId.swordCorundumId = config.get("Tool Id", Strings.swordCorundumName, ItemId.swordCorundumIdDefault).getInt();
