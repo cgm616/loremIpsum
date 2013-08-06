@@ -1,4 +1,6 @@
 Change Log:
+v0.0.3
+ - Added purifying rod without functionality
 
 v0.0.2
  - Added silver and worldgen
